@@ -6,6 +6,10 @@ a.test {
   align-items: center;
   text-decoration:none;
 }
+.smalltext{
+  font-size: .75rem;
+  color: #696969;
+}
 .columns{
   padding-bottom: 1rem;
   padding-top: 1rem;
@@ -23,9 +27,6 @@ a.test {
 .c-icon:hover{
   border: 1px solid #66D1F0;
 }
-
-
-
 .thumbnail:hover{
   opacity: 0.75;
 }
@@ -558,6 +559,7 @@ table th {
 
 .is-size-4 {
   font-size: 1.5rem !important;
+  line-height: 1.75;
 }
 
 .is-size-5 {
@@ -4574,10 +4576,6 @@ fieldset[disabled] .select select:hover {
   padding-top: 50%;
 }
 
-.image.is-3by1 {
-  padding-top: 33.3333%;
-}
-
 .image.is-4by5 {
   padding-top: 125%;
 }
@@ -6369,6 +6367,8 @@ a.list-item {
   min-height: 3.25rem;
   position: relative;
   z-index: 30;
+  padding-left:2rem;
+  padding-right:2rem;
 }
 
 .navbar.is-white {
@@ -7065,7 +7065,7 @@ body.has-navbar-fixed-bottom {
   color: #f2f2f2;
   display: block;
   line-height: 1.5;
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 1.25rem;
   position: relative;
 }
 
@@ -10569,12 +10569,19 @@ label.panel-block:hover {
 }
 
 .footer {
-  background-color: #232323;
+  background-color: #1D1D1D;
   padding:3rem;
   margin-left:3rem;
   margin-right:3rem;
   margin-bottom: 3rem;
   text-align: center;
+}
+@media screen and (max-width: 769px) {
+  .footer, .section {
+    margin-left:0rem;
+    margin-right:0rem;
+    margin-bottom: 0rem;
+  }
 }
 
 .section {
@@ -10611,12 +10618,62 @@ label.panel-block:hover {
   border: 1px solid #66D1F0;
 }
 .projects{
-  background-color: #2B2B2B;
+  background-color: #232323;
   margin-left: 3rem;
   margin-right: 3rem;
   margin-bottom: 0;
 }
+@media screen and (max-width: 769px) {
+  .projects{
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
 .svg-inline--fa{
   margin-left: 12px;
   margin-right: 12px;
+}
+figure{
+  margin:0;
+  padding-top: 24px;
+}
+.next{
+  background-color: #1B1B1B;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 4rem;
+}
+@media screen and (max-width: 769px) {
+  .next{
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+.intro{
+  background-color: #1B1B1B;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 769px) {
+  .intro{
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+.hero-img{
+  padding-bottom:0px;
+}
+.image.is-3by1 {
+  padding-top: 33.3333%;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 3rem;
+}
+@media screen and (max-width: 769px) {
+  .image.is-3by1 {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-top: 1rem;
+  }
 }
