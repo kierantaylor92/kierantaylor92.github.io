@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -5,68 +6,87 @@
     <title>Kieran Taylor - Digital Designer</title>
     <link rel="stylesheet" href="css/bulma.css">
     <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/brands.js" integrity="sha384-GtvEzzhN52RvAD7CnSR7TcPw555abR8NK28tAqa/GgIDk59o0TsaK6FHglLstzCf" crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.8.2/js/fontawesome.js" integrity="sha384-Ia7KZbX22R7DDSbxNmxHqPQ15ceNzg2U4h5A8dy3K47G2fV1k658BTxXjp7rdhXa" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/fontawesome.js" integrity="sha384-Ia7KZbX22R7DDSbxNmxHqPQ15ceNzg2U4h5A8dy3K47G2fV1k658BTxXjp7rdhXa" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <script>document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+    }
+    });
+    </script>
   </head>
-  <body>
+<body>
 
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar ">
+    <div class="container nav">
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-        </a>
-
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-        </div>
-
-        <div class="navbar-end">
-          <a class="navbar-item">
-            Work
+          <a class="navbar-item" href="#" style="font-weight:bold;">
+            Kieran Taylor
           </a>
-          <a class="navbar-item">
-            Info
-          </a>
-          <a class="navbar-item">
-            Contact
-          </a>
-        </div>
+          <span class="navbar-burger burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
       </div>
-    </nav>
-
-    <figure class="image is-3by1">
-      <img src="https://bulma.io/images/placeholders/256x256.png">
-    </figure>
-
-<section class="section overview">
-    <div class="columns is-variable is-1-mobile is-8-tablet is-8-desktop is-8-widescreen is-2-fullhd">
-      <div class="column is-two-fifths ">
-        <h1 class="is-size-2 is-size-2-mobile ">The Turf</h1>
-        <h3 class="is-size-4 is-size-4-mobile ">Sharing stories for the next generation of football fanatics.</h3>
-        <a href="https://www.theturf.com" class="test" target="_blank" rel=noreferrer">
-          View live site
-          <i class="material-icons">chevron_right</i>
-        </a>
-      </div>
-      <div class="column">
-        <p>Since 2013, The Turf has focused on sharing stories from the terraces in Melbourne to the beaches of Rio de Janeiro. Taking a fresh approach to the game, the aim was to produce a fresh perspective for Australia’s youth football movement.</br></br>
-This project was a phase 2 designed to evolve The Turf to reflect the growth of the last few years for the brand, we wanted to be able to include new categories such as sneakers, gaming and lifestyle that often cross over with the target market.</p>
+    <div id="navMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a href="#" class="navbar-item">Work</a>
+        <a href="#" class="navbar-item">Info</a>
+        <a href="#" class="navbar-item">Contact</a>
       </div>
     </div>
-</section>
+    </div>
+  </nav>
+
+    <figure class="image wide">
+      <img src="assets/turf/turf-banner.jpg">
+    </figure>
+
+    <section class="section overview">
+        <div class="columns is-variable is-1-mobile is-8-tablet is-8-desktop is-8-widescreen is-2-fullhd">
+          <div class="column is-two-fifths ">
+            <h1 class="is-size-2 is-size-2-mobile ">The Turf</h1>
+            <h3 class="is-size-4 is-size-4-mobile ">Sharing stories for the next generation of football fanatics.</h3>
+            <a href="https://www.theturf.com" class="test" target="_blank" rel=noreferrer">
+              View live site
+              <i class="material-icons">chevron_right</i>
+            </a>
+          </div>
+          <div class="column">
+            <p>Since 2013, The Turf has focused on sharing stories from the terraces in Melbourne to the beaches
+               of Rio de Janeiro. Taking a fresh approach to the game, the aim was to produce a fresh perspective
+                for Australia’s youth football movement.</br></br>
+    This project was a new phase designed to evolve The Turf to reflect the growth of the last few years for
+    the brand, we wanted to be able to include new categories such as sneakers, gaming and lifestyle that often
+    cross over with the target market.</p>
+          </div>
+        </div>
+    </section>
 
 <section class="section projects">
     <div class="columns">
-      <div class="column is-half is-offset-one-quarter">
+      <div class="column is-three-fifths is-offset-one-fifth">
         <h3 class="is-size-4 is-size-4-mobile ">V3 was all about evolving the brand,
           focusing on our strengths and including new subjects.</h3>
         <p>The new navigation aimed to provide an easier way for our users to navigate.
@@ -75,8 +95,44 @@ This project was a phase 2 designed to evolve The Turf to reflect the growth of 
             them in a prominent location as well as rethinking the menu structure.
         </p>
         <figure class="image is-16by9">
-          <img src="https://bulma.io/images/placeholders/640x360.png">
+          <img src="assets/turf/turf-hero.jpg">
         </figure>
+      </div>
+    </div>
+</section>
+
+<section class="section projects">
+    <div class="columns is-variable is-1-mobile is-8-tablet is-8-desktop is-8-widescreen is-2-fullhd">
+      <div class="column is-5">
+        <h3 class="is-size-4 is-size-4-mobile ">Promoting our best content front and centre.</h3>
+        <p>Ensuring premium content would always be displayed, the top of the page contained a featured
+          article to be updated regularly and promoteour best work, as well as the latest news in the
+          football world, below that a trending section of featured, high quality articles.
+This new structure would allow new users to see what we were about right away and encourage exploration
+better than previously.</br></br> Other points of emphasis were to still promote the social media avenues which
+is crucial for our market of young fans and call to action for anyone wanting to join the team in a variety
+of roles.</p>
+      </div>
+      <div class="column is-6 is-offset-1">
+        <figure class="image">
+          <img src="assets/turf/turf-desktop.jpg">
+        </figure>
+      </div>
+    </div>
+</section>
+
+<section class="section projects">
+    <div class="columns">
+      <div class="column is-three-fifths is-offset-one-fifth">
+        <h3 class="is-size-4 is-size-4-mobile ">Framing the action. The new Turf brand.</h3>
+        <p>The idea behind the visual design is the concept of framing the action, representative of our
+          focus on everything about the game. Utilising the outlined turf logo which both increases brand
+          awareness and make high quality photography the hero. Ideally our strong, vibrant colours are
+          brought out contrasting with flat blacks of the photography.</br></br>With a range of new
+          categories we wanted to split up, the colour scheme was expanded and carefully selected to feel
+          cohesive, this was used to display each of the new areas covered on the site, and allow users to
+          recognise what is now offered.
+        </p>
       </div>
     </div>
 </section>
@@ -85,31 +141,59 @@ This project was a phase 2 designed to evolve The Turf to reflect the growth of 
     <div class="columns">
       <div class="column">
         <figure class="image is-4by3">
-          <img src="https://bulma.io/images/placeholders/640x360.png">
+          <img src="assets/turf/turf-mobile.jpg">
         </figure>
       </div>
       <div class="column">
         <figure class="image is-4by3">
-          <img src="https://bulma.io/images/placeholders/640x360.png">
+          <img src="assets/turf/turf-posters.jpg">
+        </figure>
+      </div>
+    </div>
+</section>
+
+<figure class="image wide">
+  <img src="assets/turf/turf-colour-scheme.png">
+</figure>
+
+<section class="section projects">
+    <div class="columns">
+      <div class="column is-three-fifths is-offset-one-fifth">
+        <h3 class="is-size-4 is-size-4-mobile ">Streamlining social.</h3>
+        <p>To strengthen THE TURF brand and remain consistent, a range of social media templates can
+          be made and used to speed up process. These will provide options that work with different
+          images and colours, allowing us to utilise the brand colours and brand photography while
+          maintaining legibility and being on brand. We also broadened the colour palette, to include a
+          range that will categorise the expanded list of topics covered.
+        </p>
+      </div>
+    </div>
+</section>
+
+<section class="section projects">
+    <div class="columns">
+      <div class="column">
+        <figure class="image is-4by3">
+          <img src="assets/turf/turf-brand-1.jpg">
+        </figure>
+      </div>
+      <div class="column">
+        <figure class="image is-4by3">
+          <img src="assets/turf/turf-brand-2.jpg">
         </figure>
       </div>
     </div>
 </section>
 
 <a href="/projects/the-turf" target="_blank">
-<section class="next">
-<div class="container">
+<div class="next">
   <div class="content has-text-centered">
     <h5 is-size-7 is-size-7-mobile>Next project</h5>
     <h3 is-size-3>Holden Carline Refresh</h3>
     <i class="material-icons">arrow_right_alt</i>
   </div>
 </div>
-</section>
 </a>
-
-
-
 
     <footer class="footer">
       <div class="content has-text-centered">

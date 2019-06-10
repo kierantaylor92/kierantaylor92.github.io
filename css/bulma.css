@@ -2844,8 +2844,10 @@ fieldset[disabled] .button {
 
 @media screen and (min-width: 1088px) {
   .container {
-    max-width: 960px;
-    width: 960px;
+    max-width: 1920px;
+    width: 1920px;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
   .container.is-fluid {
     margin-left: 64px;
@@ -6363,12 +6365,12 @@ a.list-item {
   padding: 20px;
 }
 
-.navbar {
-  min-height: 3.25rem;
+.navbar-menu {
+  min-height: 5rem;
   position: relative;
   z-index: 30;
-  padding-left:2rem;
-  padding-right:2rem;
+  padding-left:0rem;
+  padding-right:0rem;
 }
 
 .navbar.is-white {
@@ -10656,6 +10658,12 @@ figure{
   margin-bottom: 0;
 }
 @media screen and (max-width: 769px) {
+  .overview{
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+@media screen and (max-width: 769px) {
   .intro{
     margin-left: 0rem;
     margin-right: 0rem;
@@ -10675,5 +10683,48 @@ figure{
     margin-left: 0rem;
     margin-right: 0rem;
     margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .image.wide {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+.wide {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 0rem;
+  padding-top: 0rem;
+}
+.next{
+  border-bottom: 1px solid #333333;
+}
+#nav-toggle-state {
+  display: none;
+}
+
+#nav-toggle-state:checked ~ .nav-menu {
+  display: block;
+}
+.navbar{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+@media screen and (max-width: 1087px) {
+  .navbar-menu {
+    background-color: #333333;
+    box-shadow: none;
+  }
+}
+@media screen and (max-width: 1087px) {
+.navbar-menu.is-active {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 1087px) {
+.navbar-end {
+    font-size:2rem;
   }
 }
