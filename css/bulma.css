@@ -423,7 +423,7 @@ pre {
 
 body {
   color: #F2F2F2;
-  line-height: 2;
+  line-height: 1.75;
   margin: 0px;
 }
 
@@ -547,8 +547,9 @@ table th {
 
 .is-size-2 {
   font-size: 2.5rem !important;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   line-height: 1.5;
+  margin-top: 1rem;
 }
 
 .is-size-3 {
@@ -583,12 +584,20 @@ table th {
   }
   .is-size-3-mobile {
     font-size: 2rem !important;
+    margin-top:0px;
+    margin-bottom:8px;
+    line-height:1.5;
   }
   .is-size-4-mobile {
     font-size: 1.5rem !important;
+    margin-top:0px;
+    margin-bottom:4px;
   }
   .is-size-5-mobile {
     font-size: 1.25rem !important;
+    margin-top:0px;
+    margin-bottom:16px;
+    line-height:1.5;
   }
   .is-size-6-mobile {
     font-size: 1rem !important;
@@ -652,12 +661,17 @@ table th {
   }
   .is-size-2-desktop {
     font-size: 2.5rem !important;
+    margin-top:0px;
+    margin-bottom:4px;
+    line-height: 1.5;
   }
   .is-size-3-desktop {
     font-size: 2rem !important;
   }
   .is-size-4-desktop {
     font-size: 1.5rem !important;
+    margin-top:0px;
+    margin-bottom:16px;
   }
   .is-size-5-desktop {
     font-size: 1.25rem !important;
@@ -4572,6 +4586,7 @@ fieldset[disabled] .select select:hover {
 
 .image.is-16by9 {
   padding-top: 56.25%;
+  margin-top: 3rem;
 }
 
 .image.is-2by1 {
@@ -10696,6 +10711,7 @@ figure{
   margin-right: 3rem;
   margin-top: 0rem;
   padding-top: 0rem;
+  background-color: #232323;
 }
 .next{
   border-bottom: 1px solid #333333;
@@ -10727,4 +10743,45 @@ figure{
 .navbar-end {
     font-size:2rem;
   }
+}
+p.role{
+  color: #C4C4C4;
+  margin-bottom: 0.75rem;
+  margin-top: 0rem;
+}
+p.company{
+  margin-bottom: -0.25rem;
+  margin-top: 0rem;
+}
+h3.work{
+  color: #fff;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  padding-right: 1rem;
+}
+h3.work:hover{
+  text-decoration: underline;
+  text-decoration-color: #66D1F0;
+}
+p.work{
+  margin-top: 4px;
+  margin-bottom: 0px;
+  color: #fff;
+  padding-right: 2rem;
+}
+p.large{
+  font-size: 1.25rem;
+}
+ul{
+  padding-inline-start: 24px;
+}
+li{
+  margin-bottom:8px;
+}
+h3{
+  color: #888888;
+}
+.navbar{
+  margin-left:0rem;
+  margin-right:0rem;
 }
