@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Holden Model Comparison - Kieran Taylor</title>
     <link rel="stylesheet" href="css/bulma.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/brands.js" integrity="sha384-GtvEzzhN52RvAD7CnSR7TcPw555abR8NK28tAqa/GgIDk59o0TsaK6FHglLstzCf" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/fontawesome.js" integrity="sha384-Ia7KZbX22R7DDSbxNmxHqPQ15ceNzg2U4h5A8dy3K47G2fV1k658BTxXjp7rdhXa" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -40,9 +41,9 @@
   <nav class="navbar ">
     <div class="container nav">
       <div class="navbar-brand">
-          <a class="navbar-item" href="#" style="font-weight:bold;">
-            Kieran Taylor
-          </a>
+        <a class="navbar-item" href="/index" style="font-weight:bold;">
+            <img src="assets/brand/brand.png" alt="logo" height="20px">
+        </a>
           <span class="navbar-burger burger" data-target="navMenu">
             <span></span>
             <span></span>
@@ -51,9 +52,8 @@
       </div>
     <div id="navMenu" class="navbar-menu">
       <div class="navbar-end">
-        <a href="#" class="navbar-item">Work</a>
-        <a href="#" class="navbar-item">Info</a>
-        <a href="#" class="navbar-item">Contact</a>
+        <a href="/work" class="navbar-item">Work</a>
+        <a href="/info" class="navbar-item">Info</a>
       </div>
     </div>
     </div>
@@ -114,7 +114,9 @@
     <div class="columns">
       <div class="column is-three-fifths is-offset-one-fifth">
         <h4 class="is-size-3 is-size-4-mobile ">Building up from the base model, to top spec.</h3>
-        <p>Understanding the differences when comparing a base level model to the top spec within a carline can be confusing when not presentented with what you are getting for the price. We made this really clear with copy that described what is special about the model and what comes with the additional price. Visually, by using white vehicles for the base model, and more attractive colours for higher end models, this made it easier to identify the progression upon first glance.
+        <p>Understanding the differences when comparing a base level model to the top spec within a carline can be confusing when not presentented with what you are getting for the price. We made this really clear with copy that described what is special about the model and what comes with the additional price. Visually, by using white vehicles for the base model, and more attractive colours for higher end models, this made it easier to identify the progression upon first glance.</br></br>
+
+        We also decided to limit the amount of vehicles at one time to 3, so as to not overwhelm users, particularly mobile. This meant we only needed to present a 'replace vehicle' option and wouldn't need to worry about people needing to endlessly scroll across, defeating the point of easily comparing. We also would remove the empty state, which was an opportunity to suggest prioritised cars but at the expense of complexity.
         </p>
       </div>
     </div>
@@ -124,27 +126,22 @@
     <div class="columns">
       <div class="column">
         <figure class="image is-4by3">
-          <img src="assets/turf/turf-mobile.jpg">
+          <img src="assets/comparison/comparison-detail-1.jpg">
         </figure>
       </div>
       <div class="column">
         <figure class="image is-4by3">
-          <img src="assets/turf/turf-posters.jpg">
+          <img src="assets/comparison/comparison-detail-2.jpg">
         </figure>
       </div>
     </div>
 </section>
-
-<figure class="image wide">
-  <img src="assets/turf/turf-colour-scheme.png">
-</figure>
 
 <section class="section projects">
     <div class="columns">
       <div class="column is-three-fifths is-offset-one-fifth">
         <h4 class="is-size-3 is-size-4-mobile ">Putting our ideas in front of the users</h3>
-        <p>We had the opportuntiy to conduct some user testing, so I took the designs into Flinto for the first time and created both a desktop and mobile prototype. These had complexities which were hard to build, including the sticky nav on scroll which then had to allow users to scroll horizontally, however despite not being 100% accurate users were able to use the features to help compare the cars.
-As a result of the UT, we discovered features that were not considered useful such as being able to export the list, or shortlist vehicles. We anticipated people would like these to be included, but stripping them out helped to create heirarchy that focused more on the key CTAs.
+        <p>We had the opportuntiy to conduct some user testing, so I took the designs into Flinto for the first time and created both a desktop and mobile prototype. These had complexities which were hard to build, including the sticky nav on scroll which then had to allow users to scroll horizontally, however despite not being 100% accurate users were able to use the features to help compare the cars. As a result of the UT, we discovered features that were not considered useful such as being able to export the list, or shortlist vehicles. We anticipated people would like these to be included, but stripping them out helped to create heirarchy that focused more on the key CTAs.
         </p>
       </div>
     </div>
@@ -152,20 +149,34 @@ As a result of the UT, we discovered features that were not considered useful su
 
 <section class="section projects">
     <div class="columns">
-      <div class="column">
-        <figure class="image is-4by3">
-          <img src="assets/turf/turf-brand-1.jpg">
+      <div class="column is-3">
+        <p class="smalltext">Enter model comparison through nav, carline or model page. Loads up 3 relevant models automatically.</p>
+        <figure class="image is-3by5">
+          <img src="assets/comparison/flow-1.jpg">
         </figure>
       </div>
-      <div class="column">
-        <figure class="image is-4by3">
-          <img src="assets/turf/turf-brand-2.jpg">
+      <div class="column is-3">
+        <p class="smalltext">To add another model, select replace vehicle and choose the type of carline you're interested in.</p>
+        <figure class="image is-3by5">
+          <img src="assets/comparison/flow-2.jpg">
         </figure>
       </div>
+    <div class="column is-3">
+      <p class="smalltext">The second step is to pick which model within the carline, ranging from base to top spec.</p>
+      <figure class="image is-3by5">
+        <img src="assets/comparison/flow-3.jpg">
+      </figure>
     </div>
+  <div class="column is-3">
+    <p class="smalltext">The vehicle chosen to be changed will be replaced by the selected model.</p>
+    <figure class="image is-3by5">
+      <img src="assets/comparison/flow-4.jpg">
+    </figure>
+  </div>
+</div>
 </section>
 
-<a href="/projects/the-turf" target="_blank">
+<a href="/projects/the-turf">
 <div class="next">
   <div class="content has-text-centered">
     <h5 is-size-7 is-size-7-mobile>Next project</h5>

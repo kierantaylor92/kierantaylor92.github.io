@@ -7,8 +7,7 @@ a.test {
   text-decoration:none;
 }
 .smalltext{
-  font-size: .75rem;
-  color: #696969;
+  font-size: .85rem;
 }
 .columns{
   padding-bottom: 1rem;
@@ -376,7 +375,7 @@ th {
 }
 
 html {
-  background-color: #333333;
+  background-color: #212120;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 300px;
@@ -10586,7 +10585,7 @@ label.panel-block:hover {
 }
 
 .footer {
-  background-color: #1D1D1D;
+  background-color: #1A1A1A;
   padding:3rem;
   margin-left:3rem;
   margin-right:3rem;
@@ -10635,7 +10634,7 @@ label.panel-block:hover {
   border: 1px solid #66D1F0;
 }
 .projects{
-  background-color: #232323;
+  background-color: #1e1e1e;
   margin-left: 3rem;
   margin-right: 3rem;
   margin-bottom: 0;
@@ -10711,7 +10710,7 @@ figure{
   margin-right: 3rem;
   margin-top: 0rem;
   padding-top: 0rem;
-  background-color: #232323;
+  background-color: #1e1e1e;
 }
 .next{
   border-bottom: 1px solid #333333;
@@ -10784,4 +10783,13 @@ h3{
 .navbar{
   margin-left:0rem;
   margin-right:0rem;
+}
+.navbar-item img {
+    max-height: 1.25rem;
+}
+@media(max-width: 767px) {
+  .is-reverse {
+    flex-direction: column-reverse;
+    display: flex;
+  }
 }
