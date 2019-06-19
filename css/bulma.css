@@ -13,19 +13,6 @@ a.test {
   padding-bottom: 1rem;
   padding-top: 1rem;
 }
-
-.c-icon{
-  box-sizing: border-box;
-  display: inline-block;
-  border-radius: 50%;
-  padding: 8px;
-  border: 1px solid #B6B6B6;
-  margin-left: 14px;
-  fill: #fefefe;
-}
-.c-icon:hover{
-  border: 1px solid #66D1F0;
-}
 .thumbnail:hover{
   opacity: 0.75;
 }
@@ -375,7 +362,7 @@ th {
 }
 
 html {
-  background-color: #212120;
+  background-color: #F9F8F9;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 300px;
@@ -421,7 +408,7 @@ pre {
 }
 
 body {
-  color: #F2F2F2;
+  color: #293133;
   line-height: 1.75;
   margin: 0px;
 }
@@ -433,7 +420,7 @@ a {
   align-items: center;
 }
 a.headline {
-  color: #F2F2F2;
+  color: #293133;
 }
 
 .intro{
@@ -1761,7 +1748,7 @@ fieldset[disabled] .button.is-text {
 }
 
 .button.is-white:active, .button.is-white.is-active {
-  background-color: #f2f2f2;
+  background-color: #293133;
   border-color: transparent;
   color: #0a0a0a;
 }
@@ -1877,7 +1864,7 @@ fieldset[disabled] .button.is-black {
 }
 
 .button.is-black.is-inverted:hover {
-  background-color: #f2f2f2;
+  background-color: #293133;
 }
 
 .button.is-black.is-inverted[disabled],
@@ -2171,7 +2158,7 @@ fieldset[disabled] .button.is-primary {
 }
 
 .button.is-primary.is-inverted:hover {
-  background-color: #f2f2f2;
+  background-color: #293133;
 }
 
 .button.is-primary.is-inverted[disabled],
@@ -2269,7 +2256,7 @@ fieldset[disabled] .button.is-link {
 }
 
 .button.is-link.is-inverted:hover {
-  background-color: #f2f2f2;
+  background-color: #293133;
 }
 
 .button.is-link.is-inverted[disabled],
@@ -2367,7 +2354,7 @@ fieldset[disabled] .button.is-info {
 }
 
 .button.is-info.is-inverted:hover {
-  background-color: #f2f2f2;
+  background-color: #293133;
 }
 
 .button.is-info.is-inverted[disabled],
@@ -2465,7 +2452,7 @@ fieldset[disabled] .button.is-success {
 }
 
 .button.is-success.is-inverted:hover {
-  background-color: #f2f2f2;
+  background-color: #293133;
 }
 
 .button.is-success.is-inverted[disabled],
@@ -2661,7 +2648,7 @@ fieldset[disabled] .button.is-danger {
 }
 
 .button.is-danger.is-inverted:hover {
-  background-color: #f2f2f2;
+  background-color: #293133;
 }
 
 .button.is-danger.is-inverted[disabled],
@@ -2918,7 +2905,7 @@ fieldset[disabled] .button {
 .content h4,
 .content h5,
 .content h6 {
-  color: #F2F2F2;
+  color: #293133;
   font-weight: 600;
   line-height: 1.125;
 }
@@ -2926,7 +2913,7 @@ fieldset[disabled] .button {
 .content h1 {
   font-size: 3em;
   margin-bottom: 0.25em;
-  color: #F2F2F2;
+  color: #E5E5E5;
 }
 
 .content h1:not(:first-child) {
@@ -3536,7 +3523,7 @@ fieldset[disabled] .select select:hover {
 }
 
 .select.is-white select:hover, .select.is-white select.is-hovered {
-  border-color: #f2f2f2;
+  border-color: #293133;
 }
 
 .select.is-white select:focus, .select.is-white select.is-focused, .select.is-white select:active, .select.is-white select.is-active {
@@ -3759,7 +3746,7 @@ fieldset[disabled] .select select:hover {
 }
 
 .file.is-white:active .file-cta, .file.is-white.is-active .file-cta {
-  background-color: #f2f2f2;
+  background-color: #293133;
   border-color: transparent;
   color: #0a0a0a;
 }
@@ -6400,7 +6387,7 @@ a.list-item {
 .navbar.is-white .navbar-brand > a.navbar-item:hover, .navbar.is-white .navbar-brand > a.navbar-item.is-active,
 .navbar.is-white .navbar-brand .navbar-link:hover,
 .navbar.is-white .navbar-brand .navbar-link.is-active {
-  background-color: #f2f2f2;
+  background-color: #293133;
   color: #0a0a0a;
 }
 
@@ -6426,7 +6413,7 @@ a.list-item {
   .navbar.is-white .navbar-end > a.navbar-item.is-active,
   .navbar.is-white .navbar-end .navbar-link:hover,
   .navbar.is-white .navbar-end .navbar-link.is-active {
-    background-color: #f2f2f2;
+    background-color: #293133;
     color: #0a0a0a;
   }
   .navbar.is-white .navbar-start .navbar-link::after,
@@ -6435,7 +6422,7 @@ a.list-item {
   }
   .navbar.is-white .navbar-item.has-dropdown:hover .navbar-link,
   .navbar.is-white .navbar-item.has-dropdown.is-active .navbar-link {
-    background-color: #f2f2f2;
+    background-color: #293133;
     color: #0a0a0a;
   }
   .navbar.is-white .navbar-dropdown a.navbar-item.is-active {
@@ -7017,7 +7004,7 @@ body.has-navbar-fixed-bottom {
 }
 
 .navbar-burger {
-  color: #f2f2f2;
+  color: #293133;
   cursor: pointer;
   display: block;
   height: 3.25rem;
@@ -7078,7 +7065,7 @@ body.has-navbar-fixed-bottom {
 
 .navbar-item,
 .navbar-link {
-  color: #f2f2f2;
+  color: #293133;
   display: block;
   line-height: 1.5;
   padding: 0.5rem 1.25rem;
@@ -7363,11 +7350,7 @@ a.navbar-item:hover, a.navbar-item.is-active,
   }
   .navbar > .container .navbar-brand,
   .container > .navbar .navbar-brand {
-    margin-left: -.75rem;
-  }
-  .navbar > .container .navbar-menu,
-  .container > .navbar .navbar-menu {
-    margin-right: -.75rem;
+    margin-left: 0rem;
   }
   .navbar.is-fixed-bottom-desktop, .navbar.is-fixed-top-desktop {
     left: 0;
@@ -9745,7 +9728,7 @@ label.panel-block:hover {
 .hero.is-white a.navbar-item:hover, .hero.is-white a.navbar-item.is-active,
 .hero.is-white .navbar-link:hover,
 .hero.is-white .navbar-link.is-active {
-  background-color: #f2f2f2;
+  background-color: #293133;
   color: #0a0a0a;
 }
 
@@ -10634,7 +10617,7 @@ label.panel-block:hover {
   border: 1px solid #66D1F0;
 }
 .projects{
-  background-color: #1e1e1e;
+  background-color: #F4F4F4;
   margin-left: 3rem;
   margin-right: 3rem;
   margin-bottom: 0;
@@ -10654,7 +10637,7 @@ figure{
   padding-top: 24px;
 }
 .next{
-  background-color: #1B1B1B;
+  background-color: #EAEAEA;
   margin-left: 3rem;
   margin-right: 3rem;
   padding: 4rem;
@@ -10710,7 +10693,7 @@ figure{
   margin-right: 3rem;
   margin-top: 0rem;
   padding-top: 0rem;
-  background-color: #1e1e1e;
+  background-color: #F4F4F4;
 }
 .next{
   border-bottom: 1px solid #333333;
@@ -10787,9 +10770,18 @@ h3{
 .navbar-item img {
     max-height: 1.25rem;
 }
-@media(max-width: 767px) {
+@media(max-width: 768px) {
   .is-reverse {
     flex-direction: column-reverse;
     display: flex;
   }
+}
+h3.is-white, p.is-white, h1.is-white{
+  color: #EAEAEA;
+}
+p.is-grey{
+  color: #4F4F4F;
+}
+.logo{
+  padding-left:0px;
 }
