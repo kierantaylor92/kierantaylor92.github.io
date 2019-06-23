@@ -10736,7 +10736,7 @@ p.company{
   margin-top: 0rem;
 }
 h3.work{
-  color: #fff;
+  color: #293133;
   margin-top: 8px;
   margin-bottom: 0px;
   padding-right: 1rem;
@@ -10748,7 +10748,7 @@ h3.work:hover{
 p.work{
   margin-top: 4px;
   margin-bottom: 0px;
-  color: #fff;
+  color: #4F4F4F;
   padding-right: 2rem;
 }
 p.large{
@@ -10784,4 +10784,16 @@ p.is-grey{
 }
 .logo{
   padding-left:0px;
+}
+.logo:hover{
+  opacity:0.85;
+}
+.next:hover{
+  opacity:0.75;
+}
+@media screen and (max-width: 769px) {
+  .logo{
+    padding-left: 1.5rem;
+  }
+  }
 }
