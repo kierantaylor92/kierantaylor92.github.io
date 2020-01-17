@@ -414,7 +414,7 @@ body {
 }
 
 a {
-  color: #66D1F0;
+  color: #339FD6;
   cursor: pointer;
   text-decoration: none;
   align-items: center;
@@ -7086,7 +7086,7 @@ a.navbar-item,
 a.navbar-item:hover, a.navbar-item.is-active,
 .navbar-link:hover,
 .navbar-link.is-active {
-  color: #66D1F0;
+  color: #339FD6;
 }
 
 .navbar-item {
@@ -10614,7 +10614,7 @@ label.panel-block:hover {
   width: 48px;
 }
 .c-icon:hover{
-  border: 1px solid #66D1F0;
+  border: 1px solid #339FD6;
 }
 .projects{
   background-color: #F4F4F4;
@@ -10743,7 +10743,7 @@ h3.work{
 }
 h3.work:hover{
   text-decoration: underline;
-  text-decoration-color: #66D1F0;
+  text-decoration-color: #339FD6;
 }
 p.work{
   margin-top: 4px;
