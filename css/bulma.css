@@ -1,6 +1,23 @@
 /*! bulma.io v0.7.4 | MIT License | github.com/jgthms/bulma */
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 
+html, body {
+  height: 100%;
+}
+.social{
+  padding-top: 3rem;
+}
+a.email{
+  text-decoration-line: underline;
+  text-decoration-color: #ED4257;
+  padding-bottom:2px;
+}
+p.brand{
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #ED4257;
+}
 a.test {
   display: flex;
   align-items: center;
@@ -327,6 +344,7 @@ textarea {
 
 html {
   box-sizing: border-box;
+  background-color: #1B1516;
 }
 
 *, *::before, *::after {
@@ -390,14 +408,14 @@ button,
 input,
 select,
 textarea {
-  font-family: "HKGrotesk", serif;
+  font-family: "neue-haas-grotesk-text", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: "InterUI", serif;
+  font-family: "degular-display", sans-serif;
 }
 
 code,
@@ -408,19 +426,22 @@ pre {
 }
 
 body {
-  color: #293133;
+  color: #362427;
   line-height: 1.75;
   margin: 0px;
 }
 
 a {
-  color: #339FD6;
+  color: #362427;
   cursor: pointer;
   text-decoration: none;
   align-items: center;
+  font-family: neue-haas-grotesk-text, sans-serif;
+font-weight: 500;
+font-style: normal;
 }
 a.headline {
-  color: #293133;
+  color: #362427;
 }
 
 .intro{
@@ -432,7 +453,7 @@ a strong {
 }
 
 a:hover {
-  color: #5FC3E0;
+  color: #939393;
 }
 
 code {
@@ -528,7 +549,7 @@ table th {
 .is-size-1 {
   font-size: 3rem !important;
   margin-bottom: 24px;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .is-size-2 {
@@ -1748,7 +1769,7 @@ fieldset[disabled] .button.is-text {
 }
 
 .button.is-white:active, .button.is-white.is-active {
-  background-color: #293133;
+  background-color: #362427;
   border-color: transparent;
   color: #0a0a0a;
 }
@@ -1864,7 +1885,7 @@ fieldset[disabled] .button.is-black {
 }
 
 .button.is-black.is-inverted:hover {
-  background-color: #293133;
+  background-color: #362427;
 }
 
 .button.is-black.is-inverted[disabled],
@@ -2158,7 +2179,7 @@ fieldset[disabled] .button.is-primary {
 }
 
 .button.is-primary.is-inverted:hover {
-  background-color: #293133;
+  background-color: #362427;
 }
 
 .button.is-primary.is-inverted[disabled],
@@ -2256,7 +2277,7 @@ fieldset[disabled] .button.is-link {
 }
 
 .button.is-link.is-inverted:hover {
-  background-color: #293133;
+  background-color: #362427;
 }
 
 .button.is-link.is-inverted[disabled],
@@ -2354,7 +2375,7 @@ fieldset[disabled] .button.is-info {
 }
 
 .button.is-info.is-inverted:hover {
-  background-color: #293133;
+  background-color: #362427;
 }
 
 .button.is-info.is-inverted[disabled],
@@ -2452,7 +2473,7 @@ fieldset[disabled] .button.is-success {
 }
 
 .button.is-success.is-inverted:hover {
-  background-color: #293133;
+  background-color: #362427;
 }
 
 .button.is-success.is-inverted[disabled],
@@ -2648,7 +2669,7 @@ fieldset[disabled] .button.is-danger {
 }
 
 .button.is-danger.is-inverted:hover {
-  background-color: #293133;
+  background-color: #362427;
 }
 
 .button.is-danger.is-inverted[disabled],
@@ -2905,7 +2926,7 @@ fieldset[disabled] .button {
 .content h4,
 .content h5,
 .content h6 {
-  color: #293133;
+  color: #362427;
   font-weight: 600;
   line-height: 1.125;
 }
@@ -3523,7 +3544,7 @@ fieldset[disabled] .select select:hover {
 }
 
 .select.is-white select:hover, .select.is-white select.is-hovered {
-  border-color: #293133;
+  border-color: #362427;
 }
 
 .select.is-white select:focus, .select.is-white select.is-focused, .select.is-white select:active, .select.is-white select.is-active {
@@ -3746,7 +3767,7 @@ fieldset[disabled] .select select:hover {
 }
 
 .file.is-white:active .file-cta, .file.is-white.is-active .file-cta {
-  background-color: #293133;
+  background-color: #362427;
   border-color: transparent;
   color: #0a0a0a;
 }
@@ -6387,7 +6408,7 @@ a.list-item {
 .navbar.is-white .navbar-brand > a.navbar-item:hover, .navbar.is-white .navbar-brand > a.navbar-item.is-active,
 .navbar.is-white .navbar-brand .navbar-link:hover,
 .navbar.is-white .navbar-brand .navbar-link.is-active {
-  background-color: #293133;
+  background-color: #362427;
   color: #0a0a0a;
 }
 
@@ -6413,7 +6434,7 @@ a.list-item {
   .navbar.is-white .navbar-end > a.navbar-item.is-active,
   .navbar.is-white .navbar-end .navbar-link:hover,
   .navbar.is-white .navbar-end .navbar-link.is-active {
-    background-color: #293133;
+    background-color: #362427;
     color: #0a0a0a;
   }
   .navbar.is-white .navbar-start .navbar-link::after,
@@ -6422,7 +6443,7 @@ a.list-item {
   }
   .navbar.is-white .navbar-item.has-dropdown:hover .navbar-link,
   .navbar.is-white .navbar-item.has-dropdown.is-active .navbar-link {
-    background-color: #293133;
+    background-color: #362427;
     color: #0a0a0a;
   }
   .navbar.is-white .navbar-dropdown a.navbar-item.is-active {
@@ -7004,7 +7025,7 @@ body.has-navbar-fixed-bottom {
 }
 
 .navbar-burger {
-  color: #293133;
+  color: #362427;
   cursor: pointer;
   display: block;
   height: 3.25rem;
@@ -7065,7 +7086,7 @@ body.has-navbar-fixed-bottom {
 
 .navbar-item,
 .navbar-link {
-  color: #293133;
+  color: #362427;
   display: block;
   line-height: 1.5;
   padding: 0.5rem 1.25rem;
@@ -7086,7 +7107,7 @@ a.navbar-item,
 a.navbar-item:hover, a.navbar-item.is-active,
 .navbar-link:hover,
 .navbar-link.is-active {
-  color: #339FD6;
+  color: #362427;
 }
 
 .navbar-item {
@@ -9728,7 +9749,7 @@ label.panel-block:hover {
 .hero.is-white a.navbar-item:hover, .hero.is-white a.navbar-item.is-active,
 .hero.is-white .navbar-link:hover,
 .hero.is-white .navbar-link.is-active {
-  background-color: #293133;
+  background-color: #362427;
   color: #0a0a0a;
 }
 
@@ -10614,7 +10635,7 @@ label.panel-block:hover {
   width: 48px;
 }
 .c-icon:hover{
-  border: 1px solid #339FD6;
+  border: 1px solid #362427;
 }
 .projects{
   background-color: #F4F4F4;
@@ -10736,14 +10757,14 @@ p.company{
   margin-top: 0rem;
 }
 h3.work{
-  color: #293133;
+  color: #362427;
   margin-top: 8px;
   margin-bottom: 0px;
   padding-right: 1rem;
 }
 h3.work:hover{
   text-decoration: underline;
-  text-decoration-color: #339FD6;
+  text-decoration-color: #362427;
 }
 p.work{
   margin-top: 4px;
