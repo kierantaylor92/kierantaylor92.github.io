@@ -2,21 +2,75 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 
 html, body {
-  height: 100%;
+
 }
 .social{
   padding-top: 3rem;
+  padding-left: .75rem;
+}
+/* image hover effect */
+.is-7 {
+  overflow: hidden;
+  border-radius: 12px;
+  padding-right: 0.75em !important;
+
+}
+.is-16by9 {
+  display: inline-block;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: 0.3s;
+
+}
+.is-16by9:hover {
+  transform: scale(1.05);
+}
+p.notation{
+  margin-top: 3rem;
+  color: #E04C3E;
+}
+p{
+  color: #E7C5CB;
+}
+.columns{
+  padding-top: 0px;
+}
+.text-icon{
+  padding-left: 12px;
+  padding-bottom: 6px;
+  vertical-align: middle;
+}
+.brand-icon{
+height: 24px;
+width: 24px;
+padding-bottom: 4px;
+padding-right: -4px;
+vertical-align: middle;
+}
+.project-link{
+  margin-top:0px !important;
+}
+.project-link:hover{
+  text-decoration: underline;
+  text-decoration-color: #E04C3E;
+}
+a:hover {
+  opacity: 0.5;
+}
+/* Solid border */
+hr.solid {
+  border-top: 1px solid #423D3D;
 }
 a.email{
   text-decoration-line: underline;
-  text-decoration-color: #ED4257;
+  text-decoration-color: #E04C3E;
   padding-bottom:2px;
 }
 p.brand{
   font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #ED4257;
+  color: #E04C3E;
 }
 a.test {
   display: flex;
@@ -223,6 +277,7 @@ a.test {
   position: absolute;
   right: 0;
   top: 0;
+  border-radius: 12px;
 }
 
 .button, .input,
@@ -380,9 +435,10 @@ th {
 }
 
 html {
-  background-color: #F9F8F9;
+  background-color: #1E1C1C;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  font-weight: 400;
   min-width: 300px;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -426,13 +482,13 @@ pre {
 }
 
 body {
-  color: #362427;
+  color: #FFF5F9;
   line-height: 1.75;
   margin: 0px;
 }
 
 a {
-  color: #362427;
+  color: #FFF5F9;
   cursor: pointer;
   text-decoration: none;
   align-items: center;
@@ -441,7 +497,7 @@ font-weight: 500;
 font-style: normal;
 }
 a.headline {
-  color: #362427;
+  color: #FFF5F9;
 }
 
 .intro{
@@ -450,10 +506,6 @@ a.headline {
 
 a strong {
   color: currentColor;
-}
-
-a:hover {
-  color: #939393;
 }
 
 code {
@@ -465,10 +517,10 @@ code {
 }
 
 hr {
-  background-color: whitesmoke;
+  background-color: #423D3D;
   border: none;
   display: block;
-  height: 2px;
+  height: 1px;
   margin: 1.5rem 0;
 }
 
@@ -580,6 +632,8 @@ table th {
 
 .is-size-7 {
   font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  margin-bottom: 0px !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -1769,7 +1823,7 @@ fieldset[disabled] .button.is-text {
 }
 
 .button.is-white:active, .button.is-white.is-active {
-  background-color: #362427;
+  background-color: #FFF5F9;
   border-color: transparent;
   color: #0a0a0a;
 }
@@ -1885,7 +1939,7 @@ fieldset[disabled] .button.is-black {
 }
 
 .button.is-black.is-inverted:hover {
-  background-color: #362427;
+  background-color: #FFF5F9;
 }
 
 .button.is-black.is-inverted[disabled],
@@ -2179,7 +2233,7 @@ fieldset[disabled] .button.is-primary {
 }
 
 .button.is-primary.is-inverted:hover {
-  background-color: #362427;
+  background-color: #FFF5F9;
 }
 
 .button.is-primary.is-inverted[disabled],
@@ -2277,7 +2331,7 @@ fieldset[disabled] .button.is-link {
 }
 
 .button.is-link.is-inverted:hover {
-  background-color: #362427;
+  background-color: #FFF5F9;
 }
 
 .button.is-link.is-inverted[disabled],
@@ -2375,7 +2429,7 @@ fieldset[disabled] .button.is-info {
 }
 
 .button.is-info.is-inverted:hover {
-  background-color: #362427;
+  background-color: #FFF5F9;
 }
 
 .button.is-info.is-inverted[disabled],
@@ -2473,7 +2527,7 @@ fieldset[disabled] .button.is-success {
 }
 
 .button.is-success.is-inverted:hover {
-  background-color: #362427;
+  background-color: #FFF5F9;
 }
 
 .button.is-success.is-inverted[disabled],
@@ -2669,7 +2723,7 @@ fieldset[disabled] .button.is-danger {
 }
 
 .button.is-danger.is-inverted:hover {
-  background-color: #362427;
+  background-color: #FFF5F9;
 }
 
 .button.is-danger.is-inverted[disabled],
@@ -2926,7 +2980,7 @@ fieldset[disabled] .button {
 .content h4,
 .content h5,
 .content h6 {
-  color: #362427;
+  color: #FFF5F9;
   font-weight: 600;
   line-height: 1.125;
 }
@@ -2943,11 +2997,12 @@ fieldset[disabled] .button {
 
 .content h2 {
   font-size: 1.75em;
-  margin-bottom: 0.5714em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 
 .content h2:not(:first-child) {
-  margin-top: 1.1428em;
+  margin-top: 0.5em;
 }
 
 .content h3 {
@@ -3544,7 +3599,7 @@ fieldset[disabled] .select select:hover {
 }
 
 .select.is-white select:hover, .select.is-white select.is-hovered {
-  border-color: #362427;
+  border-color: #FFF5F9;
 }
 
 .select.is-white select:focus, .select.is-white select.is-focused, .select.is-white select:active, .select.is-white select.is-active {
@@ -3767,7 +3822,7 @@ fieldset[disabled] .select select:hover {
 }
 
 .file.is-white:active .file-cta, .file.is-white.is-active .file-cta {
-  background-color: #362427;
+  background-color: #FFF5F9;
   border-color: transparent;
   color: #0a0a0a;
 }
@@ -4593,7 +4648,7 @@ fieldset[disabled] .select select:hover {
 
 .image.is-16by9 {
   padding-top: 56.25%;
-  margin-top: 3rem;
+  margin-top: 0px;
 }
 
 .image.is-2by1 {
@@ -6408,7 +6463,7 @@ a.list-item {
 .navbar.is-white .navbar-brand > a.navbar-item:hover, .navbar.is-white .navbar-brand > a.navbar-item.is-active,
 .navbar.is-white .navbar-brand .navbar-link:hover,
 .navbar.is-white .navbar-brand .navbar-link.is-active {
-  background-color: #362427;
+  background-color: #FFF5F9;
   color: #0a0a0a;
 }
 
@@ -6434,7 +6489,7 @@ a.list-item {
   .navbar.is-white .navbar-end > a.navbar-item.is-active,
   .navbar.is-white .navbar-end .navbar-link:hover,
   .navbar.is-white .navbar-end .navbar-link.is-active {
-    background-color: #362427;
+    background-color: #FFF5F9;
     color: #0a0a0a;
   }
   .navbar.is-white .navbar-start .navbar-link::after,
@@ -6443,7 +6498,7 @@ a.list-item {
   }
   .navbar.is-white .navbar-item.has-dropdown:hover .navbar-link,
   .navbar.is-white .navbar-item.has-dropdown.is-active .navbar-link {
-    background-color: #362427;
+    background-color: #FFF5F9;
     color: #0a0a0a;
   }
   .navbar.is-white .navbar-dropdown a.navbar-item.is-active {
@@ -7025,7 +7080,7 @@ body.has-navbar-fixed-bottom {
 }
 
 .navbar-burger {
-  color: #362427;
+  color: #FFF5F9;
   cursor: pointer;
   display: block;
   height: 3.25rem;
@@ -7086,7 +7141,7 @@ body.has-navbar-fixed-bottom {
 
 .navbar-item,
 .navbar-link {
-  color: #362427;
+  color: #FFF5F9;
   display: block;
   line-height: 1.5;
   padding: 0.5rem 1.25rem;
@@ -7107,7 +7162,7 @@ a.navbar-item,
 a.navbar-item:hover, a.navbar-item.is-active,
 .navbar-link:hover,
 .navbar-link.is-active {
-  color: #362427;
+  color: #FFF5F9;
 }
 
 .navbar-item {
@@ -7865,7 +7920,8 @@ label.panel-block:hover {
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
-  padding: 0.75rem;
+  padding: 0;
+  margin-left: 0.75em;
 }
 
 .columns.is-mobile > .column.is-narrow {
@@ -9749,7 +9805,7 @@ label.panel-block:hover {
 .hero.is-white a.navbar-item:hover, .hero.is-white a.navbar-item.is-active,
 .hero.is-white .navbar-link:hover,
 .hero.is-white .navbar-link.is-active {
-  background-color: #362427;
+  background-color: #FFF5F9;
   color: #0a0a0a;
 }
 
@@ -10635,7 +10691,7 @@ label.panel-block:hover {
   width: 48px;
 }
 .c-icon:hover{
-  border: 1px solid #362427;
+  border: 1px solid #FFF5F9;
 }
 .projects{
   background-color: #F4F4F4;
@@ -10757,14 +10813,14 @@ p.company{
   margin-top: 0rem;
 }
 h3.work{
-  color: #362427;
+  color: #FFF5F9;
   margin-top: 8px;
   margin-bottom: 0px;
   padding-right: 1rem;
 }
 h3.work:hover{
   text-decoration: underline;
-  text-decoration-color: #362427;
+  text-decoration-color: #FFF5F9;
 }
 p.work{
   margin-top: 4px;
