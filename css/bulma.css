@@ -8,19 +8,40 @@ html, body {
   padding-top: 3rem;
   padding-left: .75rem;
 }
+.columns{
+  padding-right: 1.2em;
+}
+a.logo{
+  color: #E04C3E;
+}
+.feature{
+ margin-bottom: 20em;
+}
+.test{
+  padding-top: -20em;
+}
+.hero{
+  border-radius: 12px;
+}
 /* image hover effect */
 .is-7 {
   overflow: hidden;
   border-radius: 12px;
-  padding-right: 0.75em !important;
-
+  margin-right: 0.75em !important;
 }
 .is-16by9 {
   display: inline-block;
   box-sizing: border-box;
   overflow: hidden;
   transition: 0.3s;
-
+}
+.is-7{
+  margin-bottom: 4em;
+}
+@media screen and (max-width: 769px) {
+  .is-7 {
+    margin-bottom: 0em;
+  }
 }
 .is-16by9:hover {
   transform: scale(1.05);
@@ -28,6 +49,11 @@ html, body {
 p.notation{
   margin-top: 3rem;
   color: #E04C3E;
+}
+@media screen and (max-width: 769px) {
+  p.notation {
+    margin-top: 0rem ;
+  }
 }
 p{
   color: #E7C5CB;
@@ -39,6 +65,9 @@ p{
   padding-left: 12px;
   padding-bottom: 6px;
   vertical-align: middle;
+}
+.rounded{
+  border-radius: 12px;
 }
 .brand-icon{
 height: 24px;
@@ -57,9 +86,16 @@ vertical-align: middle;
 a:hover {
   opacity: 0.5;
 }
+.is-size-mega{
+  font-size: 4rem !important;
+  margin-bottom: 1em;
+  line-height: 1.2;
+  letter-spacing: 0.1rem;
+}
 /* Solid border */
 hr.solid {
   border-top: 1px solid #423D3D;
+  margin-top: 1em;
 }
 a.email{
   text-decoration-line: underline;
@@ -384,6 +420,7 @@ h5,
 h6 {
   font-size: 100%;
   font-weight: normal;
+  letter-spacing: 0.05rem;
 }
 
 ul {
@@ -1090,7 +1127,7 @@ a.has-text-dark:hover, a.has-text-dark:focus {
 }
 
 .has-text-primary {
-  color: #00d1b2 !important;
+  color: #E04C3E !important;
 }
 
 a.has-text-primary:hover, a.has-text-primary:focus {
@@ -1194,7 +1231,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 }
 
 .has-text-grey {
-  color: #7a7a7a !important;
+  color: #939393 !important;
 }
 
 .has-background-grey {
@@ -4593,6 +4630,7 @@ fieldset[disabled] .select select:hover {
 .image {
   display: block;
   position: relative;
+  border-radius: 12px;
 }
 
 .image img {
@@ -10661,12 +10699,20 @@ label.panel-block:hover {
 }
 
 .section {
-  padding: 3rem ;
+  padding: 4rem ;
+  padding-bottom: 1rem;
+  padding-top: 1.5rem;
 }
 
 @media screen and (max-width: 769px) {
   .section {
     padding: 2rem ;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .section {
+    padding-left: 8rem ;
+    padding-right: 8rem ;
   }
 }
 
