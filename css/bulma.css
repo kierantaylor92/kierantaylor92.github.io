@@ -10706,7 +10706,7 @@ label.panel-block:hover {
 
 @media screen and (max-width: 769px) {
   .section {
-    padding: 2rem ;
+    padding: 1rem ;
   }
 }
 @media screen and (min-width: 1441px) {
@@ -10910,7 +10910,7 @@ p.is-grey{
 }
 @media(max-width: 1090px) {
   .logo {
-    padding-left: 1.5rem;
+    padding-left: 0rem;
   }
 }
 .logo:hover{
@@ -10921,7 +10921,7 @@ p.is-grey{
 }
 @media screen and (max-width: 769px) {
   .logo{
-    padding-left: 1.5rem;
+    padding-left: 0rem;
   }
   }
 }
