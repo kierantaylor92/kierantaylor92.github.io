@@ -4,6 +4,40 @@
 html, body {
 
 }
+.company{
+  font-weight: 500;
+  padding-bottom: -1rem;
+  line-height: 1.2rem;
+  color: #FFF5F9
+}
+.project-title{
+  margin-bottom:0rem;
+}
+.project-description{
+  margin-top:.25rem;
+}
+.work-tile:hover {
+  text-decoration: underline;
+  text-decoration-color: #E04C3E;
+  opacity:100;
+}
+.contact-footer{
+  background-color: #202020;
+  padding-left: 4rem ;
+  padding-right: 4rem ;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.is-hero{
+  font-weight: 500;
+  padding-bottom: 0rem;
+  line-height: 0px;
+  color: #FFF5F9
+}
+.detail{
+  padding-bottom: 1rem;
+}
 .social{
   padding-top: 3rem;
   padding-left: .75rem;
@@ -639,6 +673,7 @@ table th {
   font-size: 3rem !important;
   margin-bottom: 24px;
   line-height: 1.2;
+  margin-top:0px;
 }
 
 .is-size-2 {
@@ -7100,7 +7135,7 @@ body.has-navbar-fixed-bottom {
 
 .navbar-brand,
 .navbar-tabs {
-  align-items: stretch;
+  align-items: center;
   display: flex;
   flex-shrink: 0;
   min-height: 3.25rem;
@@ -7289,7 +7324,6 @@ a.navbar-item:hover, a.navbar-item.is-active,
     display: none;
   }
   .navbar-menu {
-    background-color: white;
     box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
     padding: 0.5rem 0;
   }
@@ -9103,7 +9137,7 @@ label.panel-block:hover {
 }
 
 .columns {
-  margin-left: -0.75rem;
+  margin-left: -0rem;
   margin-right: -0.75rem;
   margin-top: -0.75rem;
 }
@@ -10832,16 +10866,29 @@ figure{
     margin-left: 2rem;
     margin-right: 2rem;
 }
+@media screen and (min-width: 768) {
+  .navbar{
+      margin-left: 1.7rem;
+      margin-right: 1.7rem;
+  }
+}
+
 @media screen and (max-width: 1087px) {
   .navbar-menu {
-    background-color: #ffffff;
+    background-color: ##1e1c1c;
     box-shadow: none;
+    width:100%;
   }
 }
 @media screen and (max-width: 1087px) {
 .navbar-menu.is-active {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+}
+@media screen and (max-width: 768px) {
+.navbar-item {
+    padding-left: 0rem;
   }
 }
 @media screen and (max-width: 1087px) {
@@ -10878,7 +10925,7 @@ p.large{
   font-size: 1.25rem;
 }
 ul{
-  padding-inline-start: 24px;
+  padding-inline-start: 0px;
 }
 li{
   margin-bottom:8px;
@@ -10887,8 +10934,15 @@ h3{
   color: #888888;
 }
 .navbar{
-  margin-left:0rem;
-  margin-right:0rem;
+  margin-left:4.6rem;
+  margin-right:4.6rem;
+  padding-bottom:
+}
+@media(max-width: 768px) {
+  .navbar {
+    margin-left:1.6rem;
+    margin-right:1.6rem;
+  }
 }
 .navbar-item img {
     max-height: 1.25rem;
