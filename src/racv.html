@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://use.typekit.net/yso2oek.css">
+</head>
+<body class="bg-dark-bg-1 mx-6 md:mx-12 lg:mx-24">
+  
+  
+<!-- navigation -->
+<div class="w-full text-gray-700 dark-mode:text-gray-200 dark-mode:bg-gray-800">
+  <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto justify-items-stretch md:justify-between md:flex-row md:px-6 lg:px-8">
+    <div class="p-4 flex flex-row items-center justify-between">
+      <a href="#" class="text-lg font-semibold tracking-widest text-tahiti uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">Kieran Taylor</a>
+      <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+    <nav :class="{'flex': open, 'hidden': !open}" class="py-2 flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-center md:flex-row">
+      <a class="text-blue-200 hover: hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="#">Work</a>
+      <a class="text-blue-200 hover: hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="#">Info</a> 
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+    </nav>
+    <button type="button" class="p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+      <span class="sr-only">View notifications</span>
+      <!-- Heroicon name: outline/sun -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-32 hidden md:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+      </svg>
+     </button>
+  </div></div>     
+  </div>
+</div>
+
+<!-- intro -->
+<div class="md:pt-32 pt-16 md:mb-24 mb-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="lg:text-left">
+      <h2 class="text-center max-w-xl md:text-5xl text-4xl text-dark-contrast lg:mx-auto font-bold font-degular tracking-wide leading-none py-2 md:py-2">RACV Experience Language</h2>
+      <p class="text-center max-w-xl mt-4 text-xl md:text-2xl text-dark-default lg:mx-auto font-normal leading-relaxed">
+        Introducing a fresh new member experience for Jetstar travellers
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- hero -->
+    <div class="align-top mb-6 lg:mb-12 ">
+      <div class="w-full aspect-video bg-gray-200 rounded-2xl md:rounded-3xl overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+        <img src="/src/img/hero-racv.jpg" alt="Screenshot of the Jetstar My Account portal on a device" class="w-full h-full object-center object-cover group-hover:opacity-90 ease-out duration-100">
+      </div>
+      <div class="border-b border-dark-bg-3 pb-4 mb-24">
+        <p class="text-left mt-4 text-sm text-dark-subtle lg:mx-auto font-normal leading-relaxed uppercase tracking-wide font-semibold">
+          <span class="text-brand-primary pr-1">●</span>2020 / isobar
+        </p>
+    </div>
+  </div>
+
+    <!-- Case study -->
+    <div class="lg:text-left mb-24">
+      <h2 class="pb-4 text-3xl md:text-4xl text-dark-contrast lg:mx-auto font-degular max-w-3xl"> Project overview </h2>
+      <div class="flex justify-between mt-2 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        <p>The goal of this project was to support the growth of RACV and set their team up to deliver exceptional member experiences at scale, improving efficiency and alignment to allow the team to focus on creating value to their members. </p>
+      </div>
+      <div class="flex justify-between mt-2 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        <p> The RACV digital presence had become very difficult to manage and the design system was a chance for us to establish clear standards, principles and processes that could build a sustainable experience language which would empower the team. </p>
+      </div>
+    </div>
+
+    <div class="align-top mb-24 lg:mb-28 ">
+      <div class="w-full aspect-video bg-gray-200 rounded-2xl md:rounded-3xl overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+        <img src="/src/img/racv-screen-1.jpg" alt="Screenshot of the Jetstar My Account portal on a device" class="w-full h-full object-center object-cover group-hover:opacity-90 ease-out duration-100">
+      </div>
+    </div>
+
+    <div class="lg:text-left mb-24">
+      <h2 class="pb-4 mt-4 text-3xl md:text-4xl text-dark-contrast lg:mx-auto font-degular max-w-3xl">Objectives</h2>
+      <div class="flex justify-between mt-2 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        <p> What was quite a unique project for the agency meant we were designing for an audience of designers, developers and members of the experience team, helping them realise the value of the system and support them being successful producing experiences across the ecosystem currently as well as in the future. It was an opportunity to take holistic view of the ecosystem which isn’t usually practical or possible during regular projects. </p>
+      </div>
+    </div>
+
+    <div class="lg:text-left mb-24">
+      <h2 class="pb-4 mt-4 text-3xl md:text-4xl text-dark-contrast lg:mx-auto font-degular max-w-3xl">Process</h2>
+      <div class="flex justify-between mt-2 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        <p> To understand how to create the right type of design system for the RACV teams specific needs, we conducted both a complex resource and visual audit. This included 28 experience templates, 28 example pages, 7 categories, 86 components, 20 component variations, 70 unique product pages and 15 additional form components, supported by detailed analysis on the relationships between key components and templates and technical interviews done by other members of the team to understand constraints and pain points for the developers and content authors. </p>
+      </div>
+    </div>
+
+    <div class="align-top mb-24 lg:mb-28 ">
+      <div class="w-full aspect-video bg-gray-200 rounded-2xl md:rounded-3xl overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+        <img src="/src/img/racv-screen-2.jpg" alt="Screenshot of the Jetstar My Account portal on a device" class="w-full h-full object-center object-cover group-hover:opacity-90 ease-out duration-100">
+      </div>
+    </div>
+
+    <div class="lg:text-left mb-24">
+      <h2 class="pb-4 mt-4 text-3xl md:text-4xl text-dark-contrast lg:mx-auto font-degular max-w-3xl">Findings</h2>
+      <div class="flex justify-between mt-2 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        <p> We wanted to move the digital brand aesthetic closer towards the offline brand work and establish theory to elevate the brand colours. Another area of improvement was around improving accessibility including colour contrast and messaging. </p>
+      </div>
+      <div class="flex justify-between mt-2 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        <p>  There was a lack of strong type heirarchy, by adding more prominence around headlines and section headings there would be greater usability. Moving away from full width text blocks was another decisions to add better readability and accessibility. </p>
+      </div>
+      <div class="flex justify-between mt-2 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        <p> Generic use of common components for many different uses led to challenging, complex variations that suffered from lack of purpose and usability challenges. When redesigning the components for the new design system we rethought the purpose behind each component, where to add new components and how to introduce variants for better usability. </p>
+      </div>
+    </div>
+
+    <div class="align-top mb-24 lg:mb-28 ">
+      <div class="w-full aspect-video bg-gray-200 rounded-2xl md:rounded-3xl overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+        <img src="/src/img/racv-screen-3.jpg" alt="Screenshot of the Jetstar My Account portal on a device" class="w-full h-full object-center object-cover">
+      </div>
+    </div>
+
+    <div class="lg:text-left mb-24">
+      <h2 class="pb-4 mt-4 text-3xl md:text-4xl text-dark-contrast lg:mx-auto font-degular max-w-3xl">Design goals</h2>
+      <div class="flex justify-between mt-2 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        <p> Boxy aesthetic interrupted the page structure and made content hard to access without clearly defined sections. By learning developer implications we created more refined and consistent layouts for templates and spacing within components so that designs would balance flexibility and structure going forward.  </p>
+      </div>
+      <div class="flex justify-between mt-2 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        <p>  There was a lot of work to define the semantic structure and roles of icons on the site. We separated interface and product icons while also adding variants for different use cases of our illustrative icon style.  </p>
+      </div>
+    </div>
+
+    <div class="align-top mb-24 lg:mb-28 ">
+      <div class="w-full aspect-video bg-gray-200 rounded-2xl md:rounded-3xl overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+        <img src="/src/img/racv-screen-4.jpg" alt="Screenshot of the Jetstar My Account portal on a device" class="w-full h-full object-center object-cover">
+      </div>
+    </div>
+
+    <div class="lg:text-left mb-24">
+      <h2 class="pb-4 mt-4 text-3xl md:text-4xl text-dark-contrast lg:mx-auto font-degular max-w-3xl">Design tooling</h2>
+      <div class="flex justify-between mt-2 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        <p> We moved to Figma as the primary design tool to solve key challenges of team collaboration, alignment and to provide and infrastructure for an effective system. We set up both a legacy and future state design system as well as setting up the project structure for the team to build out their design libraries and current work. </p>
+      </div>
+      <div class="flex justify-between mt-2 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        <p>  The design system project was a great opportunity to deep dive into the exciting new features within Figma, and by utilising component variants and auto layout we were able to produce design artefacts that were extremely robust, accurately and functionally responsive and allowed us to create a library of every page template for all our breakpoints within a small amount of time.  </p>
+      </div>
+    </div>
+
+    <div class="align-top mb-24 lg:mb-28 ">
+      <div class="w-full aspect-video bg-gray-200 rounded-2xl md:rounded-3xl overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+        <img src="/src/img/racv-screen-6.jpg" alt="Screenshot of the Jetstar My Account portal on a device" class="w-full h-full object-center object-cover">
+      </div>
+    </div>
+
+    <div class="lg:text-left mb-24">
+      <h2 class="pb-4 mt-4 text-3xl md:text-4xl text-dark-contrast lg:mx-auto font-degular max-w-3xl">Zeroheight</h2>
+      <div class="flex justify-between mt-2 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        <p> Zeroheight was our documentation tool that brought the system together and synced our code and design instances. We had a philosophy to never duplicate content and always refer to a Zeroheight instance. The hard work was to balance offering enough guidance and documentation without becoming cumbersome for a team member to understand a component. </p>
+      </div>
+      <div class="flex justify-between mt-2 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        <p>  We introduced a template to make sure component guidelines were consistent and easy to follow as well as to create in the future, there was also extensive guidelines for onboarding team members, commentary around naming conventions and processes, and a ways of working document for introducing new designers. </p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <div>
+        <img  class="rounded-2xl" src="/src/img/racv-screen-7.jpg" alt="Screenshot of the Jetstar My Account portal on a device" class="w-full h-full object-center object-cover">
+      </div>
+      <div class="rounded-2xl md:rounded-3xl">
+        <img  class="rounded-2xl" src="/src/img/racv-screen-8.jpg" alt="Screenshot of the Jetstar My Account portal on a device" class="w-full h-full object-center object-cover">
+      </div>
+    </div>
+
+    <div class="py-8 md:p-16 bg-white/[.02] rounded-3xl mb-32">
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="mt-2 text-2xl md:text-4xl leading-8 font-extrabold text-dark-contrast font-degular tracking-wide leading-none md:mb-8 mb-6">Thanks for stopping by</p>
+        <p class="md:mt-2 mt-1 text-base leading-8 text-dark-default leading-none md:mb-12 mb-8"><span class="text-brand-primary">●</span> Available for freelance</p>
+        <div class="">
+          <button type="button" class="text-dark-default border-solid border-2 border-dark-bg-2 hover:border-dark-bg-3 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-10 md:py-5 py-4 text-center inline-flex items-center gap-2 ease-out duration-100">
+            <a href="mailto:kieran.taylor92@gmail.com">kieran.taylor92@gmail.com</a>
+          </button>
+        </div>
+      </div>  
+    </div>
+
+
+  <div class="w-full flex flex-row items-center justify-between max-w-screen-xl px-16">
+    <div>
+    </div>
+    <div class="text-center mb-16">
+      <p class="text-dark-default font-normal mb-4">Designed in Perth, Western Australia</p>
+      <p class="text-dark-default mb-4" id="current-time"></p>
+      <p class="text-dark-contrast  mb-4">
+        <a class="text-dark-contrast hover:text-dark-subtle ease-out duration-100" href="http://www.figma.com/@kieran" target="_blank">Figma</a> | <a class="text-dark-contrast hover:text-dark-subtle ease-out duration-100" href="https://www.linkedin.com/in/kierantaylor92/" target="_blank">Linkedin</a> | <a class="text-dark-contrast hover:text-dark-subtle ease-out duration-100" href="https://unsplash.com/@ktaylor92" target="_blank">Unsplash</a></p>
+    </div>
+    <div>
+    </div>
+  </div>
+
+
+  <script>
+    let time = document.getElementById("current-time");
+    setInterval(() =>{
+      let d = new Date();
+      time.innerHTML = d.toLocaleTimeString();
+    },1000)
+  </script>
+  <script>
+    console.log(
+date.toLocaleTimeString([], {
+  year: 'numeric',
+  month: 'numeric',
+  day: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+}),
+);
+  </script>
+
+</body>
+</html>

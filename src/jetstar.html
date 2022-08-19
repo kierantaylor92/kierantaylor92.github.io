@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://use.typekit.net/yso2oek.css">
+</head>
+<body class="bg-dark-bg-1 mx-6 md:mx-12 lg:mx-24">
+  
+  
+<!-- navigation -->
+<div class="w-full text-gray-700 dark-mode:text-gray-200 dark-mode:bg-gray-800">
+  <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto justify-items-stretch md:justify-between md:flex-row md:px-6 lg:px-8">
+    <div class="p-4 flex flex-row items-center justify-between">
+      <a href="#" class="text-lg font-semibold tracking-widest text-tahiti uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">Kieran Taylor</a>
+      <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+    <nav :class="{'flex': open, 'hidden': !open}" class="py-2 flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-center md:flex-row">
+      <a class="text-blue-200 hover: hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="#">Work</a>
+      <a class="text-blue-200 hover: hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="#">Info</a> 
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+    </nav>
+    <button type="button" class="p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+      <span class="sr-only">View notifications</span>
+      <!-- Heroicon name: outline/sun -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-32 hidden md:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+      </svg>
+     </button>
+  </div></div>     
+  </div>
+</div>
+
+<!-- intro -->
+<div class="md:pt-32 pt-16 md:mb-24 mb-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="lg:text-left">
+      <h2 class="text-center max-w-xl md:text-5xl text-4xl text-dark-contrast lg:mx-auto font-bold font-degular tracking-wide leading-none py-2 md:py-2">Jetstar My Account</h2>
+      <p class="text-center max-w-xl mt-4 text-xl md:text-2xl text-dark-default lg:mx-auto font-normal leading-relaxed">
+        Introducing a fresh new member experience for Jetstar travellers
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- hero -->
+    <div class="align-top mb-6 lg:mb-12 ">
+      <div class="w-full aspect-video bg-gray-200 rounded-2xl md:rounded-3xl overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+        <img src="/src/img/hero-myaccount.jpg" alt="Screenshot of the Jetstar My Account portal on a device" class="w-full h-full object-center object-cover group-hover:opacity-90 ease-out duration-100">
+      </div>
+      <div class="border-b border-dark-bg-3 pb-4 mb-24">
+        <p class="text-left mt-4 text-sm text-dark-subtle lg:mx-auto font-normal leading-relaxed uppercase tracking-wide font-semibold">
+          <span class="text-brand-primary pr-1">●</span>2019 / isobar
+        </p>
+    </div>
+  </div>
+
+    <!-- Case study -->
+    <div class="lg:text-left mb-24">
+      <h2 class="pb-4 text-3xl md:text-4xl text-dark-contrast lg:mx-auto font-degular max-w-3xl"> Project overview </h2>
+      <div class="flex justify-between mt-2 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        <p> Jetstar My account needed a fresh space for our members to see when they log in. After being on a legacy platform it was needed to revitalise the look and feel to be consistent with how the site had evolved and to address the core functionalities and navigation which were unclear and confusing. My role was to revisit previous blue sky concepts and treejack testing that had been done and consider how it could kickstart the MVP for the new My Account, including a new IA that considered the future state, and the layout needed to evolve to display future content. </p>
+      </div>
+    </div>
+
+    <div class="align-top mb-24 lg:mb-28 ">
+      <div class="w-full aspect-video bg-gray-200 rounded-2xl md:rounded-3xl overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+        <img src="/src/img/jetstar-screen-1.jpg" alt="Screenshot of the Jetstar My Account portal on a device" class="w-full h-full object-center object-cover group-hover:opacity-90 ease-out duration-100">
+      </div>
+    </div>
+
+    <div class="lg:text-left mb-24">
+      <h2 class="pb-4 mt-4 text-3xl md:text-4xl text-dark-contrast lg:mx-auto font-degular max-w-3xl"> Setting up My Account </h2>
+      <div class="flex justify-between mt-2 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        <p>I took the designs from mid-fi wireframes through to finished UI including developer handoff, leading weekly checkins with various Product Owners as well as rationalising the designs to our UX design team so that it could be picked up and evolved by other tribes in the future and providing suggestions on potential features which could be incorporated. </p>
+      </div>
+    </div>
+
+    <div class="lg:text-left mb-24">
+      <h2 class="pb-4 mt-4 text-3xl md:text-4xl text-dark-contrast lg:mx-auto font-degular max-w-3xl"> A fresh space for when our members log in </h2>
+      <div class="flex justify-between mt-2 pb-4 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        We landed on the concept of a dashboard for users to see when they login. This would allow quick navigation between sections of their account and include space to display Club Jetstar savings widgets, price watch features and notifications as well as the possibility of gamifying the dash, which I used to attempt introducing out mascot ‘Jetta’ into the Australian market.
+      </div>
+      <div class="flex justify-between mt-2 pb-4 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        The key sections within the MVP were broken up into a users personal details, their preferred payment methods and a specific Club Jetstar section. It was important to take into consideration future state when deciding on these as to plan the IA for any expected features to fit in as well. 
+      </div>
+      <div class="flex justify-between mt-2 pb-4 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        If a user had an upcoming trip we were also able to display that within My Account and link through to the corresponding 'Manage My Booking', I noted that the navigation was inconsitent between these and other parts of the site and we agreed to revisit post MVP. 
+      </div>
+    </div>
+
+    <div class="align-top mb-24 lg:mb-28 ">
+      <div class="w-full aspect-video bg-gray-200 rounded-2xl md:rounded-3xl overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+        <img src="/src/img/jetstar-screen-2.jpg" alt="Screenshot of the Jetstar My Account portal on a device" class="w-full h-full object-center object-cover group-hover:opacity-90 ease-out duration-100">
+      </div>
+    </div>
+
+    <div class="lg:text-left mb-24">
+      <h2 class="pb-4 mt-4 text-3xl md:text-4xl text-dark-contrast lg:mx-auto font-degular max-w-3xl"> Future state Jetta </h2>
+      <div class="flex justify-between mt-2 pb-4 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        We discussed some fun concepts for the squad who would pick up My Account post MVP, such as gamifying the experience and adding things to make it a bit more playful and personal. This included: 
+      </div>
+      <div class="flex justify-between mt-2 pb-4 pb-4 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        Alerting users to renew their Club Jetstar membership once expiration was approaching, for users who did not want to setup auto renew
+      </div>
+      <div class="flex justify-between mt-2 pb-4 pb-4 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        Adding an idicator for how much details they have added - this would also promote features that most people were unaware of but quite useful, such as adding travel companions.
+      </div>
+      <div class="flex justify-between mt-2 pb-4 pb-4 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        Updating users personal photo from having just an image of initials or photos from their social login, to preselected Jetta stickers or their own photos.
+      </div>
+    </div>
+
+    <div class="align-top mb-24 lg:mb-28 ">
+      <div class="w-full aspect-video bg-gray-200 rounded-2xl md:rounded-3xl overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+        <img src="/src/img/jetstar-screen-1.jpg" alt="Screenshot of the Jetstar My Account portal on a device" class="w-full h-full object-center object-cover group-hover:opacity-90 ease-out duration-100">
+      </div>
+    </div>
+
+    <div class="lg:text-left mb-24">
+      <h2 class="pb-4 mt-4 text-3xl md:text-4xl text-dark-contrast lg:mx-auto font-degular max-w-3xl"> Personalised content and features to enhance the membership experience </h2>
+      <div class="flex justify-between mt-2 pb-4 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        The dashboard approach helped keep the designs relevant to both standard and Club Jetstar users. We wanted a space for CJ users to see immediate value when they logged in but also have a dedicated space to manage their membership details and payment information and this allowed us to do both. 
+      </div>
+      <div class="flex justify-between mt-2 pb-4 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        In addition to that, we could more strategically promote these benefits to non-members by displaying it as a premium feature within their account, and more closely tying it to your overall Jetstar experience, as well as eventually adding features such as price watch and notifications.</div>
+    </div>
+
+    <div class="align-top mb-24 lg:mb-28 ">
+      <div class="w-full aspect-video bg-gray-200 rounded-2xl md:rounded-3xl overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+        <img src="/src/img/jetstar-screen-1.jpg" alt="Screenshot of the Jetstar My Account portal on a device" class="w-full h-full object-center object-cover group-hover:opacity-90 ease-out duration-100">
+      </div>
+    </div>
+
+    <div class="lg:text-left mb-24">
+      <h2 class="pb-4 mt-4 text-3xl md:text-4xl text-dark-contrast lg:mx-auto font-degular max-w-3xl"> Setting up the user journeys </h2>
+      <div class="flex justify-between mt-2 pb-4 text-lg text-dark-default lg:mx-auto leading-relaxed max-w-3xl">
+        As certain sections would still live on the Skysales platform until it was all migrated across, we needed a technically feasible, but logical way to direct users there. Considering the lack of a mobile breakpoint and not having the ability to modify the legacy pages, we were quite limited and opted to just make it clear when leaving the new platform, and to keep all external links together as to not confuse users between the primary navigation and legacy items. User flows for mobile, desktop and app users had to be considered which meant we needed to workshop solutions with our dedicated app team. </div>
+    </div>
+
+    <div class="py-8 md:py-16 bg-white/[.02] rounded-3xl mb-32">
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="mt-2 text-2xl md:text-4xl leading-8 font-extrabold text-dark-contrast font-degular tracking-wide leading-none md:mb-8 mb-6">Thanks for stopping by</p>
+        <p class="md:mt-2 mt-1 text-base leading-8 text-dark-default leading-none md:mb-12 mb-8"><span class="text-brand-primary">●</span> Available for freelance</p>
+        <div class="">
+          <button type="button" class="text-dark-default border-solid border-2 border-dark-bg-2 hover:border-dark-bg-3 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-10 md:py-5 py-4 text-center inline-flex items-center gap-2 ease-out duration-100">
+            <a href="mailto:kieran.taylor92@gmail.com">kieran.taylor92@gmail.com</a>
+          </button>
+        </div>
+      </div>  
+    </div>
+
+
+    <div class="w-full flex flex-row items-center justify-between max-w-screen-xl px-16">
+      <div class="text-center mb-16">
+        <p class="text-dark-default font-normal mb-4">Designed in Perth, Western Australia</p>
+        <p class="text-dark-default mb-4" id="current-time"></p>
+        <p class="text-dark-contrast  mb-4">
+          <a class="text-dark-contrast hover:text-dark-subtle ease-out duration-100" href="http://www.figma.com/@kieran" target="_blank">Figma</a> | <a class="text-dark-contrast hover:text-dark-subtle ease-out duration-100" href="https://www.linkedin.com/in/kierantaylor92/" target="_blank">Linkedin</a> | <a class="text-dark-contrast hover:text-dark-subtle ease-out duration-100" href="https://unsplash.com/@ktaylor92" target="_blank">Unsplash</a></p>
+      </div>
+    </div>
+
+
+  <script>
+    let time = document.getElementById("current-time");
+    setInterval(() =>{
+      let d = new Date();
+      time.innerHTML = d.toLocaleTimeString();
+    },1000)
+  </script>
+  <script>
+    console.log(
+date.toLocaleTimeString([], {
+  year: 'numeric',
+  month: 'numeric',
+  day: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+}),
+);
+  </script>
+
+</body>
+</html>

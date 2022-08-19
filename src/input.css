@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.display-none{
+    @apply hidden;
+}
+
+@layer base{
+     {
+        font-family: 'neue-haas-grotesk-text', sans-serif; 
+    }
+}

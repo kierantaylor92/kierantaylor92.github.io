@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://use.typekit.net/yso2oek.css">
+</head>
+<body class="bg-dark-bg-1 mx-6 md:mx-12 lg:mx-24">
+  
+  
+<!-- navigation -->
+<div class="w-full text-gray-700 dark-mode:text-gray-200 dark-mode:bg-gray-800">
+  <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto justify-items-stretch md:justify-between md:flex-row md:px-6 lg:px-8">
+    <div class="p-4 flex flex-row items-center justify-between">
+      <a href="#" class="text-lg font-semibold tracking-widest text-tahiti uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">Kieran Taylor</a>
+      <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+    <nav :class="{'flex': open, 'hidden': !open}" class="py-2 flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-center md:flex-row">
+      <a class="text-blue-200 hover: hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="#">Work</a>
+      <a class="text-blue-200 hover: hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="#">Info</a> 
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+    </nav>
+    <button type="button" class="p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+      <span class="sr-only">View notifications</span>
+      <!-- Heroicon name: outline/sun -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-32 hidden md:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+      </svg>
+     </button>
+  </div></div>     
+  </div>
+</div>
+
+<!-- intro -->
+<div class="py-32">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="lg:text-left mb-24">
+      <h2 class="max-w-2xl text-3xl md:text-5xl text-dark-contrast lg:mx-auto font-bold font-degular tracking-wide leading-none py-2 md:py-4">Hey, I’m Kieran, a digital product designer currently working remotely at OneTwo.</h2>
+      <p class="mt-4 max-w-2xl text-base text-dark-default lg:mx-auto font-normal leading-relaxed">
+        Currently I split my time working out of my office in Perth and visiting Melbourne with a focus on UI and UX and design systems.
+      </p>
+      <p class="mt-4 max-w-2xl text-base text-dark-default lg:mx-auto font-normal leading-relaxed">
+        On the side I freelance with the guys at Bud and Hatchet and previously spent time at Isobar and The Water Corporation. 
+      </p>
+      <p class="mt-4 max-w-2xl text-base text-dark-default lg:mx-auto font-normal leading-relaxed">
+        In my spare time I'm usually watching my Phoenix Suns, hiking, reading or wasting my Saturdays on the cricket pitch.
+      </p>
+    </div>
+
+    <!-- experience -->
+    <div class="lg:text-left mb-24">
+      <h4 class="pb-4 mt-4 max-w-2xl text-sm text-dark-subtle lg:mx-auto uppercase tracking-widest font-medium">Recent experience</h4>
+
+      <div class="flex justify-between mt-4 max-w-2xl text-lg text-dark-default lg:mx-auto border-b border-dark-bg-2 hover:border-dark-bg-3 ease-out duration-100 pb-4">
+        <a href="http://www.onetwo.com.au" target="_blank" class="-m-3 p-3 flex items-center">
+          <span class="text-base text-dark-default pr-2">OneTwo Home Loans</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.66602 11.3334L11.3327 4.66669" stroke="#8D8F93" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.66602 4.66669H11.3327V11.3334" stroke="#8D8F93" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <div class="text-base text-dark-subtle">Current</div>
+      </div>
+      <div class="flex justify-between mt-4 max-w-2xl text-lg text-dark-default lg:mx-auto border-b border-dark-bg-2 hover:border-dark-bg-3 ease-out duration-100 pb-4">
+        <a href="http://www.bud.agency" target="_blank" class="-m-3 p-3 flex items-center">
+          <span class="text-base text-dark-default pr-2">Bud</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.66602 11.3334L11.3327 4.66669" stroke="#8D8F93" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.66602 4.66669H11.3327V11.3334" stroke="#8D8F93" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <div class="text-base text-dark-subtle">Current</div>
+      </div>
+
+      <div class="flex justify-between mt-4 max-w-2xl text-lg text-dark-default lg:mx-auto border-b border-dark-bg-2 hover:border-dark-bg-3 ease-out duration-100 pb-4">
+        <a href="http://www.watercorporation.com.au" target="_blank" class="-m-3 p-3 flex items-center">
+          <span class="text-base text-dark-default pr-2">Water Corporation</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.66602 11.3334L11.3327 4.66669" stroke="#8D8F93" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.66602 4.66669H11.3327V11.3334" stroke="#8D8F93" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <div class="text-base text-dark-subtle">2021</div>
+      </div>
+
+      <div class="flex justify-between mt-4 max-w-2xl text-lg text-dark-default lg:mx-auto border-b border-dark-bg-2 pb-4">
+          <span class="text-base text-dark-default pr-2">Isobar</span>
+        <div class="text-base text-dark-subtle">2018 – 21</div>
+      </div>
+
+    </div>
+
+    <!-- skills -->
+    <div class="lg:text-left mb-24">
+      <h4 class="pb-4 mt-4 max-w-2xl text-sm text-dark-subtle lg:mx-auto uppercase tracking-widest font-medium">Skills</h4>
+      <div class="flex justify-between mt-4 max-w-2xl text-base text-dark-default lg:mx-auto leading-7">
+        <p>Figma /  Design systems / Prototyping / Wireframing / User journeys / Sitemaps / Prototyping / Motion Design</p>
+      </div>
+    </div>
+
+    <!-- clients -->
+    <div class="lg:text-left md:mb-32 mb-24">
+      <h4 class="pb-4 mt-4 max-w-2xl text-sm text-dark-subtle lg:mx-auto uppercase tracking-widest font-medium">Clients</h4>
+      <div class="flex justify-between mt-4 max-w-2xl text-base text-dark-default lg:mx-auto leading-7">
+        <p>Jetstar / T2 / Holden / RACV / Fuelwatch / Alinta Energy / Murdoch University / Techbrain / Royal Western Australian Historical Society / Water Corporation</p>
+      </div>
+    </div>
+
+    <div class="py-8 md:py-16 bg-white/[.02] rounded-3xl mb-32">
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="mt-2 text-2xl md:text-4xl leading-8 font-extrabold text-dark-contrast font-degular tracking-wide leading-none md:mb-8 mb-6">Thanks for stopping by</p>
+        <p class="md:mt-2 mt-1 text-base leading-8 text-dark-default leading-none md:mb-12 mb-8"><span class="text-brand-primary">●</span> Available for freelance</p>
+        <div class="">
+          <button type="button" class="text-dark-default border-solid border-2 border-dark-bg-2 hover:border-dark-bg-3 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-10 md:py-5 py-4 text-center inline-flex items-center gap-2 ease-out duration-100">
+            <a href="mailto:kieran.taylor92@gmail.com">kieran.taylor92@gmail.com</a>
+          </button>
+        </div>
+      </div>  
+    </div>
+
+
+    <div class="w-full flex flex-row items-center justify-between max-w-screen-xl px-16">
+      <div class="text-center mb-16">
+        <p class="text-dark-default font-normal mb-4">Designed in Perth, Western Australia</p>
+        <p class="text-dark-default mb-4" id="current-time"></p>
+        <p class="text-dark-contrast  mb-4">
+          <a class="text-dark-contrast hover:text-dark-subtle ease-out duration-100" href="http://www.figma.com/@kieran" target="_blank">Figma</a> | <a class="text-dark-contrast hover:text-dark-subtle ease-out duration-100" href="https://www.linkedin.com/in/kierantaylor92/" target="_blank">Linkedin</a> | <a class="text-dark-contrast hover:text-dark-subtle ease-out duration-100" href="https://unsplash.com/@ktaylor92" target="_blank">Unsplash</a></p>
+      </div>
+    </div>
+
+  <script>
+    let time = document.getElementById("current-time");
+    setInterval(() =>{
+      let d = new Date();
+      time.innerHTML = d.toLocaleTimeString();
+    },1000)
+  </script>
+  <script>
+    console.log(
+date.toLocaleTimeString([], {
+  year: 'numeric',
+  month: 'numeric',
+  day: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+}),
+);
+  </script>
+
+  </div>    
+</div>
+
+</body>
+</html>
